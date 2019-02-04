@@ -25,19 +25,36 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Gabriela|Kurale|Lobster|Marck+Script|Pacifico|Pattaya" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
-	<link rel="stylesheet" href="libs/fullpagescroll/onepage-scroll.css">
 	<!-- Link Swiper's CSS -->
 	<link rel="stylesheet" href="libs/dist/css/swiper.min.css">
-	<script>
-		$(document).ready(function(){
-			$(".main").onepage_scroll({
-				sectionContainer: "section",
-				responsiveFallback: 600,
-				loop: true
-			});
-		});
-		
-	</script>
+	<style>
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-container2 {
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+	</style>
 </head>
 <body>
 	<div class="main">
@@ -60,7 +77,94 @@
 				</form>
 			</div>
 		</section>
-	</div>
+		<section class="gallery">
+			<div class="gallery-center">
+				<h1>галерея</h1>
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="img/DSC_0696.jpg" data-lightbox="image-1">
+								<img src="img/DSC_0696.jpg" class="img-responsive" alt=""></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="img/DSC_0697.jpg" data-lightbox="image-1">
+									<img src="img/DSC_0697.jpg" class="img-responsive" alt=""></a>
+								</div>
+								<div class="swiper-slide">
+									<a href="img/DSC_0699.jpg" data-lightbox="image-1">
+										<img src="img/DSC_0699.jpg" class="img-responsive" alt=""></a>
+									</div>
+									<div class="swiper-slide">
+										<a href="img/DSC_0700.jpg" data-lightbox="image-1">
+											<img src="img/DSC_0700.jpg" class="img-responsive" alt=""></a>
+										</div>
+										<div class="swiper-slide">
+											<a href="img/мереживо Прага.jpg" data-lightbox="image-1">
+												<img src="img/мереживо Прага.jpg" class="img-responsive" alt=""></a>
+											</div>
+
+										</div>
+										<!-- Add Pagination -->
+										<div class="swiper-pagination"></div>
+									</div>
+									<!-- Swiper2 -->
+									<div class="swiper-container2">
+										<div class="swiper-wrapper">
+
+											<div class="swiper-slide">
+												<a href="img/DSC_0696.jpg" data-lightbox="image-1">
+													<img src="img/DSC_0696.jpg" class="img-responsive" alt=""></a>
+												</div>
+												<div class="swiper-slide">
+													<a href="img/DSC_0697.jpg" data-lightbox="image-1">
+														<img src="img/DSC_0697.jpg" class="img-responsive" alt=""></a>
+													</div>
+													<div class="swiper-slide">
+														<a href="img/DSC_0699.jpg" data-lightbox="image-1">
+															<img src="img/DSC_0699.jpg" class="img-responsive" alt=""></a>
+														</div>
+														<div class="swiper-slide">
+															<a href="img/DSC_0700.jpg" data-lightbox="image-1">
+																<img src="img/DSC_0700.jpg" class="img-responsive" alt=""></a>
+															</div>
+															<div class="swiper-slide">
+																<a href="img/мереживо Прага.jpg" data-lightbox="image-1">
+																	<img src="img/мереживо Прага.jpg" class="img-responsive" alt=""></a>
+																</div>
+
+
+															</div>
+															<!-- Add Pagination -->
+															<div class="swiper-pagination"></div>
+														</div>
+													</div>
+												</section>
+
+												<section class="perevagu">
+													<div class="container">
+														<h1>переваги</h1>
+														<div class="row">
+															<div class="col-md-6">
+																<p>Унікальна скатертина! Коли хочеться більше часу приділяти на себе, а не на прибирання...
+																	Гідрофобне покриття тканини не дозволяє рідинам проникати у волокна! 
+																	Вода, чай, кава, вино – все збивається у каплі, які легко видаляються з поверхні за допомогою серветки.
+																	А класичний дизайн з елегантним візерунком завжди буде окрасою Вашого інтер’єру.
+																</p>
+																<p>Легка й стильна скатертина «Лондон» повністю відображає свою назву та уособлює стриманість по-королівськи😌</p>
+																<p><i class="fa fa-cloud" aria-hidden="true"></i> гідрофобна тканика</p>
+																<p><i class="fa fa-cloud" aria-hidden="true"></i> тактильно приємна фактура тканини</p>
+																<p><i class="fa fa-cloud" aria-hidden="true"></i> вишуканий візерунок</p>
+																<p><i class="fa fa-cloud" aria-hidden="true"></i> білосніжний колір</p>
+															</div>
+															<div class="col-md-6">
+																---
+															</div>
+														</div>
+													</div>
+												</section>
+												<section></section>
+											</div>
 
 
 
@@ -69,63 +173,79 @@
 
 
 
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="libs/fullpagescroll/jquery.onepage-scroll.js"></script>
-	<script>
-		$(".main").onepage_scroll();
+											<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+											<script src="js/function.js"></script>
+											<script src="js/common.js"></script>
 
-	</script>
-	<script src="js/function.js"></script>
-	<script src="js/common.js"></script>
+											<!--timer-->
+											<script type="text/javascript">
+												function getTimeRemaining(endtime) {
+													var t = Date.parse(endtime) - Date.parse(new Date());
+													var seconds = Math.floor((t / 1000) % 60);
+													var minutes = Math.floor((t / 1000 / 60) % 60);
+													var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+													var days = Math.floor(t / (1000 * 60 * 60 * 24));
+													return {
+														total: t,
+														days: days,
+														hours: hours,
+														minutes: minutes,
+														seconds: seconds
+													};
+												}
 
-	<!--timer-->
-	<script type="text/javascript">
-		function getTimeRemaining(endtime) {
-			var t = Date.parse(endtime) - Date.parse(new Date());
-			var seconds = Math.floor((t / 1000) % 60);
-			var minutes = Math.floor((t / 1000 / 60) % 60);
-			var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-			var days = Math.floor(t / (1000 * 60 * 60 * 24));
-			return {
-				total: t,
-				days: days,
-				hours: hours,
-				minutes: minutes,
-				seconds: seconds
-			};
-		}
+												function initializeClock(id, endtime) {
+													var clock = document.getElementById(id);
+													var daysSpan = clock.querySelector(".days");
+													var hoursSpan = clock.querySelector(".hours");
+													var minutesSpan = clock.querySelector(".minutes");
+													var secondsSpan = clock.querySelector(".seconds");
 
-		function initializeClock(id, endtime) {
-			var clock = document.getElementById(id);
-			var daysSpan = clock.querySelector(".days");
-			var hoursSpan = clock.querySelector(".hours");
-			var minutesSpan = clock.querySelector(".minutes");
-			var secondsSpan = clock.querySelector(".seconds");
+													function updateClock() {
+														var t = getTimeRemaining(endtime);
 
-			function updateClock() {
-				var t = getTimeRemaining(endtime);
+														if (t.total <= 0) {
+															clearInterval(timeinterval);
+															var deadline = new Date(Date.parse(new Date()) + 5 * 1000);
+															initializeClock('clockdiv', deadline);
+														}
 
-				if (t.total <= 0) {
-					clearInterval(timeinterval);
-					var deadline = new Date(Date.parse(new Date()) + 5 * 1000);
-					initializeClock('clockdiv', deadline);
-				}
+														daysSpan.innerHTML = t.days;
+														hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+														minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+														secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+													}
 
-				daysSpan.innerHTML = t.days;
-				hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
-				minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
-				secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
-			}
+													updateClock();
+													var timeinterval = setInterval(updateClock, 1000);
+												}
 
-			updateClock();
-			var timeinterval = setInterval(updateClock, 1000);
-		}
-
-		var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
-		initializeClock("clockdiv", deadline);
-	</script>
-	<script src="libs/dist/js/swiper.min.js"></script>
-	<script src="libs/pagescrolltoidmaster/jquery.malihu.PageScroll2id.js"></script>
-	<script src="js/lightbox-20160926T131517Z/lightbox/js/lightbox-plus-jquery.min.js"></script>
-</body>
-</html>
+												var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
+												initializeClock("clockdiv", deadline);
+											</script>
+											<script src="libs/dist/js/swiper.min.js"></script>
+											<!-- Initialize Swiper -->
+											<script>
+												var swiper = new Swiper('.swiper-container', {
+													slidesPerView: 3,
+													spaceBetween: 30,
+													freeMode: true,
+													pagination: {
+														el: '.swiper-pagination',
+														clickable: true,
+													},
+												});
+												var swiper2 = new Swiper('.swiper-container2', {
+													slidesPerView: 1,
+													spaceBetween: 30,
+													freeMode: true,
+													pagination: {
+														el: '.swiper-pagination',
+														clickable: true,
+													},
+												});
+											</script>
+											<script src="libs/pagescrolltoidmaster/jquery.malihu.PageScroll2id.js"></script>
+											<script src="js/lightbox-20160926T131517Z/lightbox/js/lightbox-plus-jquery.min.js"></script>
+										</body>
+										</html>
