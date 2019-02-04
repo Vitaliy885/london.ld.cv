@@ -25,13 +25,42 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Gabriela|Kurale|Lobster|Marck+Script|Pacifico|Pattaya" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+	<link rel="stylesheet" href="libs/fullpagescroll/onepage-scroll.css">
 	<!-- Link Swiper's CSS -->
 	<link rel="stylesheet" href="libs/dist/css/swiper.min.css">
+	<script>
+		$(document).ready(function(){
+			$(".main").onepage_scroll({
+				sectionContainer: "section",
+				responsiveFallback: 600,
+				loop: true
+			});
+		});
+		
+	</script>
 </head>
 <body>
-<div class="top-block"></div>
-
-
+	<div class="main">
+		<section class="top-block">
+			<div class="block-center">
+				<h1>Досконала краса скатертини 
+					«Лондон»
+				</h1>
+				<i class="fa fa-arrow-down" aria-hidden="true"></i>
+			</div>
+		</section>
+		<section class="form-sending">
+			<div class="block-form">
+				<h1>Придбати зі знижкою 50%</h1>
+				<form id="form" method="POST">
+					<input type="text" name="name" required class="text-order" placeholder="Ваше ім'я">
+					<input type="text" name="surname" required class="text-order" placeholder="Ваше прізвище">
+					<input type="number" name="phone" required class="text-order" placeholder="Ваш телефон">
+					<button class="btn-order">Купити зі знижкою</button>
+				</form>
+			</div>
+		</section>
+	</div>
 
 
 
@@ -41,6 +70,11 @@
 
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="libs/fullpagescroll/jquery.onepage-scroll.js"></script>
+	<script>
+		$(".main").onepage_scroll();
+
+	</script>
 	<script src="js/function.js"></script>
 	<script src="js/common.js"></script>
 
