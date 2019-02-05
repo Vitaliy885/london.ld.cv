@@ -141,6 +141,7 @@ body{
 	padding: 0;
 	letter-spacing: 2px;
 	font-size: 18px;
+	box-shadow: 2px 2px 5px #000;
 }
 .wrapper-price .price-white{
 	background-color: #fff;
