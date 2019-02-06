@@ -74,7 +74,24 @@
 
 }
 @media only screen and (max-width: 425px){
-	
+	.form-sending h1{
+		font-size: 32px;
+	}
+	.gallery h1{
+		font-size: 32px;
+	}
+	.perevagu h1{
+		font-size: 32px;
+	}
+	.commentarii h1{
+		font-size: 32px;
+	}
+	.kak-zamovut h1{
+		font-size: 32px;
+	}
+	.kak-zamovut .fa{
+		margin-top: 15px;
+	}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {	

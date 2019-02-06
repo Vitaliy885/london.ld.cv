@@ -167,7 +167,7 @@
 													<p><i class="fa fa-cloud" aria-hidden="true"></i> білосніжний колір</p>
 												</div>
 												<div class="col-md-6">
-													<iframe width="100%" height="315" src="https://www.youtube.com/embed/1s57x8hYOxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+													<iframe width="100%" style="background-color: #fff; padding: 5px;" height="315" src="https://www.youtube.com/embed/1s57x8hYOxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 												</div>
 											</div>
 										</div>
@@ -246,6 +246,25 @@
 																				</div>
 																				<section class="form-sending">
 																					<div class="block-form">
+																						<div id="clockdiv-two">
+																							<h2>До кінця акції залишилося:</h2>
+																							<div>
+																								<span class="days"></span>
+																								<div class="smalltext">Днів</div>
+																							</div>
+																							<div>
+																								<span class="hours"></span>
+																								<div class="smalltext">Годин</div>
+																							</div>
+																							<div>
+																								<span class="minutes"></span>
+																								<div class="smalltext">Хвилин</div>
+																							</div>
+																							<div class="offset-seconds" style="display: none;">
+																								<span class="seconds"></span>
+																								<div class="smalltext">Секунд</div>
+																							</div>
+																						</div>
 																						<h1>Придбати зі знижкою 50%</h1>
 																						<form id="form" method="POST">
 																							<input type="text" name="name" required class="text-order" placeholder="Ваше ім'я">
@@ -253,9 +272,28 @@
 																							<input type="number" name="phone" required class="text-order" placeholder="Ваш телефон">
 																							<button class="btn-order">Купити зі знижкою</button>
 																						</form>
+																						<p class="count-tovar">Кількість товару обмежена: 13 шт</p>
 																					</div>
 																				</section>
-
+																				<section class="kak-zamovut">
+																					<h1>кроки для замовлення</h1>
+																					<div class="container">
+																						<div class="row">
+																							<div class="col-md-4 col-sm-4">
+																								<i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+																								<p>Заявка на сайті</p>
+																							</div>
+																							<div class="col-md-4 col-sm-4">
+																								<i class="fa fa-phone-square fa-3x" aria-hidden="true"></i>
+																								<p>Телефонуємо вам, узгоджуємо замовлення, умов оплати і відправки</p>
+																							</div>
+																							<div class="col-md-4 col-sm-4">
+																								<i class="fa fa-archive fa-3x" aria-hidden="true"></i>
+																								<p>Отримання замовлення у відділенні Нової Пошти</p>
+																							</div>
+																						</div>
+																					</div>
+																				</section>
 
 
 
@@ -297,6 +335,7 @@
 																								clearInterval(timeinterval);
 																								var deadline = new Date(Date.parse(new Date()) + 5 * 1000);
 																								initializeClock('clockdiv', deadline);
+																								initializeClock('clockdiv-two', deadline);
 																							}
 
 																							daysSpan.innerHTML = t.days;
@@ -311,6 +350,7 @@
 
 																					var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
 																					initializeClock("clockdiv", deadline);
+																					initializeClock("clockdiv-two", deadline);
 																				</script>
 																				<script src="libs/dist/js/swiper.min.js"></script>
 																				<!-- Initialize Swiper -->
