@@ -11,18 +11,6 @@
 	
 }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	.swiper-container2{
-		display: block;
-	}
-	.swiper-container{
-		display: none;
-	}
-	.perevagu iframe{
-		margin-top: 20px;
-	}
-}
 
 
 
@@ -57,19 +45,38 @@
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 375px){
-	.block-center h1{
-		font-size: 32px;
-	}
-	#clockdiv div > span{
-		width: auto;
-	}
-}
 @media only screen and (max-width: 1024px){
 	.block-center h1{
 		line-height: 2.1;
 	}
+	.top-block .logo{
+		display: none;
+	}
+	.wrapper-price img{
+		top: 23%;
+	}
 }
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.swiper-container2{
+		display: block;
+	}
+	.swiper-container{
+		display: none;
+	}
+	.perevagu iframe{
+		margin-top: 20px;
+	}
+	.wrapper-price img{
+		top: 39%;
+		left: 10%;
+		height: 200px;
+	}
+	.new-price{
+		float: right;
+	}
+}
+
 @media only screen and (max-width: 685px){
 
 }
@@ -92,8 +99,44 @@
 	.kak-zamovut .fa{
 		margin-top: 15px;
 	}
+	.top-block  h1{
+		line-height: 1.7;
+		font-size: 24px;
+	}
+	.wrapper-price img{
+		top: 55%;
+		left: 5%;
+		height: 170px;
+	}
+	.top-block{
+		padding: 90px 0 130px 0;
+	}
+	.new-price{
+		font-size: 22px;
+	}
+	.new-price .fa{
+		display: none;
+	}
 }
 
+
+@media only screen and (max-width: 375px){
+	.top-block  h1{
+		font-size: 22px;
+	}
+	#clockdiv div > span{
+		width: auto;
+	}
+	.wrapper-price img{
+		top: 55%;
+		left: 5%;
+		height: 150px;
+	}
+	.new-price{
+		font-size: 20px;
+		margin-right: -10px;
+	}
+}
 @media screen and (max-width: 1199px) and (min-width: 992px) {	
 
 }
@@ -150,7 +193,22 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+	.wrapper-price img{
+		top: 53%;
+		left: 5%;
+		height: 130px;
+	}
+	.wrapper-price {
+		padding: 30px 10px;
+	}
+	.new-price{
+		font-size: 18px;
+		margin-right: -10px;
+	}
+	.old-price{
+		margin-top: 35px;
+		font-size: 22px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -164,8 +222,10 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 320px) {
-	
+@media only screen and (max-width : 320px) {
+	.top-block  h1{
+		font-size: 19px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -180,12 +240,18 @@
 	
 }
 /* Extra Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
+@media only screen and (min-width : 1440px) {
+	.wrapper-price img{
+		top: 24%;
+		left: 20%;
+	}
 }
 /* Extra Extra Large Devices, Wide Screens */
 @media only screen and (min-width : 2560px) {
-
+	.wrapper-price img{
+		top: 12%;
+		left: 20%;
+	}
 }
 
 
