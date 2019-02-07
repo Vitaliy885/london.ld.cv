@@ -2,7 +2,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 .top-block{
-	background: url(../img/zadniyphon.jpg);
+	background: url(../img/DSC_0770.jpg);
 	background-position: center;
 	background-size: cover;
 	text-align: center;
@@ -30,6 +30,8 @@ body{
 	letter-spacing: 2px;
 	text-shadow: 2px 2px  #000;
 	font-weight: 600;
+	font-family: 'Pacifico', cursive;
+	line-height: 2;
 }
 .block-center .fa{
 	color: #fff;
@@ -50,6 +52,7 @@ body{
 	text-transform: uppercase;
 	padding: 20px 5px;
 	letter-spacing: 2px;
+
 }
 
 #form input{
