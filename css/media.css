@@ -53,7 +53,7 @@
 		display: none;
 	}
 	.wrapper-price img{
-		top: 23%;
+		top: 20%;
 	}
 }
 /* Small Devices, Tablets */
@@ -68,7 +68,7 @@
 		margin-top: 20px;
 	}
 	.wrapper-price img{
-		top: 39%;
+		top: 35%;
 		left: 10%;
 		height: 200px;
 	}
@@ -104,9 +104,12 @@
 		font-size: 24px;
 	}
 	.wrapper-price img{
-		top: 55%;
+		top: 42%;
 		left: 5%;
 		height: 170px;
+	}
+	.wrapper-price{
+		padding: 17px 10px;
 	}
 	.top-block{
 		padding: 90px 0 130px 0;
@@ -116,6 +119,12 @@
 	}
 	.new-price .fa{
 		display: none;
+	}
+	.new-price .show-small{
+		display: block;
+	}
+	.old-price{
+		margin-top: 22px;
 	}
 }
 
@@ -127,8 +136,14 @@
 	#clockdiv div > span{
 		width: auto;
 	}
+	#clockdiv-two div > span{
+		width: auto;
+	}
+	#clockdiv-three div > span{
+		width: auto;
+	}
 	.wrapper-price img{
-		top: 55%;
+		top: 40%;
 		left: 5%;
 		height: 150px;
 	}
@@ -194,20 +209,20 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 	.wrapper-price img{
-		top: 53%;
+		top: 40%;
 		left: 5%;
 		height: 130px;
 	}
 	.wrapper-price {
-		padding: 30px 10px;
+		padding: 17px 10px;
 	}
 	.new-price{
 		font-size: 18px;
 		margin-right: -10px;
 	}
 	.old-price{
-		margin-top: 35px;
-		font-size: 22px;
+		margin-top: 23px;
+		font-size: 18px;
 	}
 }
 
@@ -242,14 +257,14 @@
 /* Extra Large Devices, Wide Screens */
 @media only screen and (min-width : 1440px) {
 	.wrapper-price img{
-		top: 24%;
+		top: 20%;
 		left: 20%;
 	}
 }
 /* Extra Extra Large Devices, Wide Screens */
 @media only screen and (min-width : 2560px) {
 	.wrapper-price img{
-		top: 12%;
+		top: 8%;
 		left: 20%;
 	}
 }
