@@ -101,7 +101,7 @@
 	}
 	.top-block  h1{
 		line-height: 1.7;
-		font-size: 24px;
+		font-size: 28px;
 	}
 	.wrapper-price img{
 		top: 42%;
@@ -131,7 +131,7 @@
 
 @media only screen and (max-width: 375px){
 	.top-block  h1{
-		font-size: 22px;
+		font-size: 26px;
 	}
 	#clockdiv div > span{
 		width: auto;
@@ -224,6 +224,9 @@
 		margin-top: 23px;
 		font-size: 18px;
 	}
+	.top-block  h1{
+		font-size: 22px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -236,12 +239,7 @@
 	}
 }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 320px) {
-	.top-block  h1{
-		font-size: 19px;
-	}
-}
+
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
