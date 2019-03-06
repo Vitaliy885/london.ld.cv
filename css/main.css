@@ -2,7 +2,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 .top-block{
-	background: url(../img/DSC_0771.jpg);
+	background: url(../img/DSC_0770.jpg);
 	background-position: center;
 	background-size: cover;
 	text-align: center;
@@ -52,12 +52,18 @@ body{
 
 .top-block  h1{
 	font-size: 38px;
-	color: #76a3ed;
+	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-shadow: 2px 2px  #000;
 	font-weight: 600;	
 	font-family: 'Roboto Slab', serif;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
 }
 
 .form-sending{
